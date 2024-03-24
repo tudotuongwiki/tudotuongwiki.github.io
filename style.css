@@ -1,0 +1,413 @@
+body {
+    background-color: #017683;
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+.main-container .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 100%;
+    filter: blur(1px);
+}
+
+.main-container .page {
+    color: #e6e6e6;
+    margin-top: 35px;
+    position: relative;
+}
+
+.header-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 148px;
+    justify-content: flex-end;
+}
+
+.page-header-title {
+    font-size: 36px;
+    font-weight: 300;
+    letter-spacing: .25px;
+    line-height: 1.25;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+.main-header {
+    background-color: #333;
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: 1fr min-content;
+    width: 100%;
+}
+
+.header-image {
+    display: block;
+    position: relative;
+    max-height: 100px;
+    max-width: 250px;
+    object-fit: scale-down;
+    object-position: bottom;
+    margin-right: 18px;
+    width: auto;
+}
+
+.logo {
+    border-radius: 50%;
+    top: 5px;
+}
+
+.header-top {
+    align-items: flex-end;
+    display: flex;
+}
+
+.header-name {
+    position: relative;
+    color:#555555;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.25;
+    overflow: hidden;
+    text-shadow: 2px 4px 3px rgba(85, 85, 85, 0.425);
+    text-decoration: none;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin-right: 9px;
+}
+
+.main-page {
+    background-color: #0e191a;
+    border-radius: 3px;
+    min-height: 480px;
+    padding: 24px 36px;
+    position: relative;
+}
+
+.external-text {
+    color: #00cdd0;
+    text-decoration: none;
+    transition: color .3s;
+}
+
+.portable-infobox {
+    --pi-background: #0e191a;
+    --pi-secondary-background: #ffffff;
+    --pi-secondary-background--label: #000;
+    --pi-border-color: #444c4d;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    clear: right;
+    float: right;
+    margin: 0 0 18px 18px;
+    width: 270px;
+}
+
+.page-content .portable-infobox h2, .page-content .portable-infobox h3 {
+    border-bottom: 0;
+    font-family: inherit;
+    font-weight: 700;
+    margin: 0;
+}
+
+figure {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+
+.pi-data {
+    border-top-style: solid;
+    border-top-width: 1px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    grid-column-gap: 9px;
+    overflow: hidden;
+}
+
+.page-content img {
+    vertical-align: middle;
+}
+
+.pi-layout-stacked .pi-data {
+    display: block;
+}
+
+.pi-caption, .pi-data, .pi-header, .pi-navigation, .pi-title {
+    padding-left: 9px;
+    padding-right: 9px;
+}
+
+.pi-image {
+    text-align: middle;
+    margin-left: 16px;
+}
+
+.pi-item-spacing {
+    padding-bottom: 9px;
+    padding-top: 9px;
+}
+
+.pi-header, .pi-title {
+    text-align: center;
+}
+
+.pi-secondary-background {
+    background: #ffffff;
+    color: #000;
+}
+
+.toc {
+    display: table;
+    background-color: initial;
+    border: 1px solid #444c4d;
+    border-radius: 3px;
+    font-size: 100%;
+    margin: 24px auto 24px 0;
+    padding: 0;
+}
+
+.toc .toctitle {
+    align-items: center;
+    border-bottom: 1px solid #444c4d;
+    display: flex;
+    justify-content: space-between;
+    line-height: 1;
+    padding: 12px;
+    direction: ltr;
+    text-align: left;
+}
+
+.toc .toctitle h2 {
+    align-items: center;
+    border: 0;
+    color: #e6e6e6;
+    display: flex;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 500;
+    line-height: 1.25;
+    margin: 0;
+    padding: 0;
+}
+
+.toc ul li {
+    margin-left: 12px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.page-content ul {
+    list-style-type: disc;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.tocnumber, .toctext {
+    display: table-cell;
+    text-decoration: inherit;
+}
+
+.toc ul {
+    list-style: none;
+    margin: 0.3em 0;
+    padding: 0;
+    text-align: left;
+}
+
+.toc ul li a {
+    border-radius: 3px;
+    color: #e6e6e6;
+    display: block;
+    line-height: 1.75;
+    padding: 2px 6px;
+    text-decoration: none;
+    transition-duration: .3s;
+    transition-property: background-color,color;
+}
+
+.toc ul li:hover {
+    background-color: #3e678e;
+    color: white;
+}
+
+.page-content h2 {
+    border-bottom: 1px solid #444c4d;
+    font-size: 24px;
+    font-weight: 500;
+    overflow: auto;
+    padding: 6px 0;
+}
+
+.page-content p, .page-content section {
+    font-size: inherit;
+    font-weight: 400;
+    line-height: 1.75;
+    margin: 0 0 24px;
+    overflow-wrap: break-word;
+}
+
+.wikia-gallery-caption-below .lightbox-caption {
+    color: #e6e6e6;
+}
+
+.wikia-gallery-item {
+    box-sizing: initial;
+    display: inline-block;
+    margin: 1px;
+    padding: 1em;
+    text-align: left;
+    vertical-align: top;
+    white-space: normal;
+}
+
+div.thumb {
+    width: auto;
+    background-color: transparent;
+    margin-bottom: 0.5em;
+}
+
+.wikia-gallery-item .thumb {
+    margin: 0;
+    overflow: visible;
+    position: relative;
+    text-align: center;
+}
+
+.wikia-gallery-item .title, .wikia-gallery-item>.lightbox-caption {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.wikia-gallery-caption-size-medium .lightbox-caption, .wikia-gallery-caption-size-medium .title {
+    font-size: 12px;
+}
+
+.wikia-gallery-caption {
+    font-weight: 700;
+    text-align: center;
+}
+
+.wikia-gallery-item .lightbox-caption, .wikia-gallery-item .title {
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 8px 0 5px;
+}
+
+.wikia-gallery-border-small .thumb .gallery-image-wrapper {
+    border-width: 1px;
+}
+.wikia-gallery-item .thumb .gallery-image-wrapper {
+    border-style: solid;
+    overflow: hidden;
+}
+
+.wikia-gallery-item .thumb div {
+    margin: 0 auto;
+}
+
+.wikia-gallery-spacing-medium .wikia-gallery-item {
+    padding: 15px;
+}
+
+.wikia-gallery-item .thumb a.image img, .wikia-gallery-item .thumb a.image-no-lightbox img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.thumbimage {
+    background-color: unset;
+    border: unset;
+}
+
+.wikia-gallery-item .thumb a.image, .wikia-gallery-item .thumb a.image-no-lightbox {
+    align-items: center;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    line-height: 1px;
+    text-decoration: none;
+    width: 100%;
+}
+
+.WikiaTable, .article-table {
+    background: rgba(255,255,255,.02);
+    border: 0 #444c4d;
+    border-collapse: collapse;
+    margin: 1em 1em 1em 0;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+td, .article-table th {
+    border-bottom: 1px solid #444c4d;
+    padding: 6px 12px;
+}
+
+.WikiaTable th, .article-table th {
+    background: rgba(255,255,255,.05);
+    text-align: left;
+}
+
+.WikiaTable td, .WikiaTable th, .article-table td, .article-table th {
+    border-bottom: 1px solid #444c4d;
+    padding: 6px 12px;
+}
+
+table {
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+
+.page-content .tleft {
+    clear: left;
+    float: left;
+    margin: 0 20px 16px 0;
+}
+
+.page-content .thumbcaption {
+    color: #e6e6e6;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 6px 3px 3px;
+    position: relative;
+}
+.mw-content-ltr .thumbcaption {
+    text-align: left;
+}
