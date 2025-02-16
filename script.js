@@ -112,3 +112,15 @@ document.addEventListener("DOMContentLoaded", function () {
       element.textContent = "Đọc thêm";
     }
   }
+
+document.addEventListener('play', function(e) {
+      // Get all audio elements on the page
+      const audios = document.getElementsByTagName('audio');
+      // Pause and reset any audio that is not the one playing
+      for (let audio of audios) {
+        if (audio !== e.target) {
+          audio.pause();
+          audio.currentTime = 0; // Optional: reset to start
+        }
+      }
+    }, true);
